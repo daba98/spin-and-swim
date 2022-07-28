@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Spin And Swim</string>
+    <string name="ad_unit_id_banner">ca-app-pub-4311202509100146/6834210626</string>
+    <string name="ad_unit_id_rewarded_video">ca-app-pub-4311202509100146/7388744398</string>
+
+    <string name="amount_shells">Amount of shells</string>
+    <string name="back_button">Back Button</string>
+    <string name="fish_view">Fish View</string>
+    <string name="shell_view">Shell View</string>
+    <string name="buy_shells_navigation">Go to buy shells screen</string>
+    <string name="choose_fish_navigation">Go to choose fish screen</string>
+    <string name="help_navigation">Go to the game description screen</string>
+    <string name="home_navigation">Go to home screen</string>
+    <string name="restart_game">Restart game</string>
+    <string name="background">background</string>
+
+
+
+    <string name="loading">loading...</string>
+    <string name="hundred_shells">+100</string>
+    <string name="five_hundred_shells">+500</string>
+    <string name="thousand_shells">+1000</string>
+    <string name="five_thousand_shells">+5000</string>
+    <string name="tap_to_start">TAP TO START</string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="score">SCORE</string>
+    <string name="best">BEST</string>
+    <string name="want_to_revive">WANT TO REVIVE?</string>
+    <string name="revive">REVIVE</string>
+    <string name="no">NO</string>
+
+    <string name="spining_explanation">TAP TO LET THE FISH SWIM IN ITS CURRENT DIRECTION</string>
+    <string name="gap_explanation">TRY TO HIT THE GAP</string>
+
+</resources>

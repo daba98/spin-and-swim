@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    >
+
+
+
+    <de.die_bartmanns.spinnandfly.MyHSV
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/background"
+        android:contentDescription="@string/background" />
+
+        </RelativeLayout>
+
+    </de.die_bartmanns.spinnandfly.MyHSV>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4311202509100146/6834210626">
+    </com.google.android.gms.ads.AdView>
+    <!--- mit eigener APP AD UNIT ID ersetzen -->
+
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="100dp"
+        android:id="@+id/obstacle"
+        android:orientation="vertical"
+        android:weightSum="30">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_weight="10"
+            android:id="@+id/topBar"
+            />
+
+        <TextView
+            android:id="@+id/gap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textColor="#f68ace"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:layout_weight="10"
+            android:id="@+id/lowerBar"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/scoreView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:background="@drawable/rect_round_corn_trans_grey"
+        android:textColor="#ffffff"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/obstacle"
+        android:layout_centerVertical="true"
+        android:id="@+id/shellView"
+        android:contentDescription="@string/shell_view" />
+
+    <ImageView
+        android:layout_width="@dimen/fish_view_width"
+        android:layout_height="@dimen/fish_view_height"
+        android:id="@+id/fishView"
+        android:contentDescription="@string/fish_view" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/black_circle"
+        android:backgroundTint="#ffffff"
+        android:id="@+id/midView"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    tools:ignore="UselessParent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_over"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gameOverText"/>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameOverText"
+        android:background="@drawable/rect_round_corn_white"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/scoreLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/score"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:id="@+id/textScore"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:id="@+id/scoreView"
+            android:layout_below="@+id/textScore"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/best"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_below="@+id/scoreView"
+            android:id="@+id/textBest"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:id="@+id/BestView"
+            android:layout_below="@+id/textBest"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/fishButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/scoreLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/rect_round_corn_grey"
+        android:contentDescription="@string/choose_fish_navigation"
+        android:onClick="clickedFish"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fisch_button" />
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/fishButton"
+        android:background="@drawable/rect_round_corn_grey"
+        android:contentDescription="@string/home_navigation"
+        android:onClick="clickedHome"
+        android:padding="10dp"
+        android:src="@drawable/ic_home_black_24dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scoreLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/fishButton"
+        android:background="@drawable/rect_round_corn_grey"
+        android:contentDescription="@string/restart_game"
+        android:onClick="clickedRestart"
+        android:padding="10dp"
+        android:src="@drawable/redo" />
+</RelativeLayout>
+
+</RelativeLayout>
