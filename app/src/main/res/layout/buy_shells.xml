@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#f68ace"
+        android:textSize="25sp"
+        android:id="@+id/shellTextView"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/shellTextView"
+        android:contentDescription="@string/amount_shells"
+        android:src="@drawable/shell" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@string/back_button"
+        android:onClick="clickedBack"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back_24dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rect_round_corn_white"
+        android:id="@+id/one_shell"
+        android:onClick="clickedOneShell">
+
+        <ImageView
+            android:id="@+id/image_one_shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hundred_shells"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/one_shell" />
+
+        <TextView
+            android:id="@+id/num_one_shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_one_shell"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hundred_shells"
+            android:textColor="#f68ace"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/price_one_shell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num_one_shell"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/loading" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rect_round_corn_white"
+        android:id="@+id/few_shells"
+        android:onClick="clickedFewShells"
+        android:layout_toEndOf="@+id/one_shell"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/image_few_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/five_hundred_shells"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/few_shells" />
+
+        <TextView
+            android:id="@+id/num_few_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_few_shells"
+            android:layout_centerHorizontal="true"
+            android:text="@string/five_hundred_shells"
+            android:textColor="#f68ace"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/price_few_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num_few_shells"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/loading" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rect_round_corn_white"
+        android:id="@+id/several_shells"
+        android:onClick="clickedSeveralShells"
+        android:layout_toEndOf="@+id/few_shells"
+        android:layout_marginStart="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_several_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/thousand_shells"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/several_shells" />
+
+        <TextView
+            android:id="@+id/num_several_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_several_shells"
+            android:layout_centerHorizontal="true"
+            android:text="@string/thousand_shells"
+            android:textColor="#f68ace"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/price_several_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num_several_shells"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/loading" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:background="@drawable/rect_round_corn_white"
+        android:id="@+id/many_shells"
+        android:onClick="clickedManyShells"
+        android:layout_toEndOf="@+id/several_shells"
+        android:layout_marginStart="20dp">
+
+        <ImageView
+            android:id="@+id/image_many_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/five_thousand_shells"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/many_shells" />
+
+        <TextView
+            android:id="@+id/num_many_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_many_shells"
+            android:layout_centerHorizontal="true"
+            android:text="@string/five_thousand_shells"
+            android:textColor="#f68ace"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/price_many_shells"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num_many_shells"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/loading" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

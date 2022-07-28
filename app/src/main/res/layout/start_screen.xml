@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:id="@+id/startLayout">
+
+    <ImageButton
+        android:id="@+id/fishButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/whiteCircle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@string/choose_fish_navigation"
+        android:onClick="clickedFish"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fisch_button" />
+
+    <ImageButton
+        android:id="@+id/shellButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/whiteCircle"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toStartOf="@+id/fishButton"
+        android:adjustViewBounds="true"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@string/buy_shells_navigation"
+        android:onClick="clickedShell"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shell_white" />
+
+    <ImageButton
+        android:id="@+id/helpButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/whiteCircle"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/fishButton"
+        android:adjustViewBounds="true"
+        android:background="@drawable/white_circle"
+        android:contentDescription="@string/help_navigation"
+        android:onClick="clickedHelp"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/questionmark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fishAnimLayout">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/white_cricle"
+        android:layout_height="@dimen/white_cricle"
+        android:background="@drawable/white_circle"
+        android:layout_centerInParent="true"
+        android:id="@+id/whiteCircle"/>
+
+    <ImageView
+        android:id="@+id/fishView"
+        android:layout_width="@dimen/fish_view_width"
+        android:layout_height="@dimen/fish_view_height"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/fish_view"
+        android:src="@drawable/background_anim" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_start"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/fishView"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/dark_grey"
+        android:id="@+id/tapToStartView"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fishView"
+        android:layout_marginTop="20dp"
+        tools:ignore="UseCompoundDrawables">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/shell_view"
+            android:src="@drawable/shell" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#f68ace"
+            android:textSize="25sp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/shellcountView"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/whiteView"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

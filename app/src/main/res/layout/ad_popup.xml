@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="@drawable/white_circle"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+    <TextView
+        android:id="@+id/reviveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/want_to_revive"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/adButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/reviveText"
+        android:text="@string/revive"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_red"/>
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/reviveText"
+        android:layout_toEndOf="@id/adButton"
+        android:layout_alignTop="@id/adButton"
+        android:layout_marginStart="10dp"
+        android:text="@string/no"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_button_red" />
+    </RelativeLayout>
+
+</RelativeLayout>
